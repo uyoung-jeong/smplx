@@ -1694,7 +1694,7 @@ class MANO(SMPL):
                                )
 
         # # Add pre-selected extra joints that might be needed
-        # joints = self.vertex_joint_selector(vertices, joints)
+        joints = self.vertex_joint_selector(vertices, joints)
 
         if self.joint_mapper is not None:
             joints = self.joint_mapper(joints)
